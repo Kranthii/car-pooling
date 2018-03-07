@@ -1,0 +1,43 @@
+.tile.tile-wide, .tile.tile-double {
+  height: 100px;;
+  width: 100%;
+}
+.tile.tile-orange {
+  background-color:#d9edf7;
+}
+
+.tile {
+  display: block;
+  cursor: pointer;
+  -webkit-perspective: 0;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform .2s;
+  float: left;
+  min-width: 75px;
+  min-height: 75px;
+  text-align: center;
+  opacity: .75;
+  background-color :black;
+  z-index: 1;
+  border: 4px #fff solid;
+  color:black;
+}
+.tile:hover {
+  background-color:skyblue;
+}
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.428571429;
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 5%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
