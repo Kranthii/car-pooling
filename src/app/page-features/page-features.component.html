@@ -19,12 +19,17 @@
               </h3>
             </div>
           <br>
-              <div class="input-group date" style="width:80%">
+          <mat-form-field>
+              <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+              <!-- <div class="input-group date" style="width:80%">
                   <input type="text" class="form-control"  value="12-02-2012">
                   <div class="input-group-addon">
                       <span class="glyphicon glyphicon-th"></span>
                   </div>
-              </div>
+              </div> -->
           </div>
         </div>
         <div class="col-md-8">
