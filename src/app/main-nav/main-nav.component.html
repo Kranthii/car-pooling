@@ -1,68 +1,21 @@
-<mat-toolbar color="primary">
-  <!-- <span>Car Parking</span> -->
-   <button mat-button style="font-size:16px;font-family:Roboto,Helvetica Neue,sans-serif;font-weight: 500">
-<span>
-  <b>
-      Car Parking
-  </b>
-</span>
-  </button>
-  <!-- <!-- <span>Application Title</span> -->
-   <!-- <button mat-button>Menu</button> -->
+<mat-toolbar color="primary" class="mat-elevation-z12">
+   <button mat-button>Car Parking</button>
   <span class="example-fill-remaining-space"></span>
-  <!-- <span>Sign Up</span> -->
-  <!-- <span>
-    Login
-  </span> -->
-  <!-- <button mat-icon-button [matMenuTriggerFor]="appMenu" [matMenuTriggerData]="{name: 'Sally'}">
-    Login
-    <!-- <mat-icon>more_vert</mat-icon> -->
-    <!-- </button> -->
-  <!-- <button mat-icon-button [matMenuTriggerFor]="appMenu" [matMenuTriggerData]="{name: 'Sally'}"> -->
-
-    <!-- Sign Up<mat-icon>more_vert</mat-icon> -->
-    <!-- </button> -->
-  <mat-menu #appMenu="matMenu">
+    <button mat-icon-button [matMenuTriggerFor]="appMenu" [matMenuTriggerData]="{name: 'Kranthi'}">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #appMenu="matMenu">
       <ng-template matMenuContent let-name="name">
         <button mat-menu-item>Settings</button>
         <button mat-menu-item>Log off {{name}}</button>
       </ng-template>
     </mat-menu>
-
-    <button mat-icon-button [matMenuTriggerFor]="appMenu" [matMenuTriggerData]="{name: 'Kranthi'}">
-      <mat-icon>more_vert</mat-icon>
-    </button>
-
-    <!-- <button mat-icon-button [matMenuTriggerFor]="appMenu" [matMenuTriggerData]="{name: 'Bob'}">
-      <mat-icon>more_vert</mat-icon>
-    </button> -->
 </mat-toolbar>
-<!-- <nav class="docs-navbar-header">
-    <button mat-button style="font-size:16px;font-family:Roboto,Helvetica Neue,sans-serif;font-weight: 500">
-        <span>
-            Car Parking
-        </span>
-          </button>
-</nav> -->
-<!-- <nav  class="docs-navbar-header">
-    <a  aria-label="Angular Material"
-    class="docs-button mat-button"
-     mat-button="" routerlink="/" tabindex="0"
-     aria-disabled="false" href="/">
-     <span class="mat-button-wrapper">
-      <span >Material</span>
-    </span>
-    <div class="mat-button-ripple mat-ripple" matripple=""></div>
-    <div class="mat-button-focus-overlay"></div>
-  </a>
-    </nav> -->
-
-
 <style>
   .example-fill-remaining-space {
   flex: 1 1 auto;
 }
-.mat-button{
+/* .mat-button{
   background: transparent;
 }
 .docs-navbar-header {
@@ -75,5 +28,5 @@
     -ms-flex-align: center;
     align-items: center;
     padding: 8px 16px;
-}
+} */
 </style>
